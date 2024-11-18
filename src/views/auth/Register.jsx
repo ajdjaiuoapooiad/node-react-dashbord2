@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -32,7 +33,15 @@ const Register = () => {
                             type="checkbox" name="checkbox" id="checkbox" />
                             <label htmlFor="checkbox">I agree to privacy policy & treams</label>
                         </div>
+                        <button className="bg-slate-800 w-full hover:shadow-blue-300/ hover:shadow-lg text-white rounded-md px-7 py-2 mb-3">Sign up</button>
 
+                        <div className="flex items-center mb-3 gap-3 justify-center">
+                            <p>Already Have an account?
+                            <Link className="font-bold" to='/login'>Login</Link>
+                            </p> 
+
+
+                        </div>
                     </form>
 
                 </div>
